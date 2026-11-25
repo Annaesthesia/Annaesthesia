@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annaesthesia | Senior Frontend Developer &amp; UI Design Engineer</title>
+  <meta name="description" content="Portfolio of Annaesthesia, a senior frontend developer and UI design engineer with an analytical sciences background. Projects, skills, certifications and contact details.">
+  <meta name="theme-color" content="#070b16">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) root.setAttribute('data-theme', 'light');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="statics\css\style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">YN</span>
+        <span class="brand-text">Annaesthesia</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5h0a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 18a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zM4.2 4.2a1 1 0 0 1 1.4 0l.7.7a1 1 0 1 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4zm13.5 13.5a1 1 0 0 1 1.4 0l.7.7a1 1 0 0 1-1.4 1.4l-.7-.7a1 1 0 0 1 0-1.4zM2 12a1 1 0 0 1 1-1h1a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm18 0a1 1 0 0 1 1-1h1a1 1 0 0 1 0 2h-1a1 1 0 0 1-1-1zM4.2 19.8a1 1 0 0 1 0-1.4l.7-.7a1 1 0 0 1 1.4 1.4l-.7.7a1 1 0 0 1-1.4 0zM17.7 6.3a1 1 0 0 1 0-1.4l.7-.7a1 1 0 1 1 1.4 1.4l-.7.7a1 1 0 0 1-1.4 0z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Open to opportunities</p>
+          <h1 id="hero-title">Hi, I'm <span class="grad">Annaesthesia</span>.<br>I build precise, beautiful interfaces.</h1>
+          <p class="typed-line">
+            <span class="typed-prefix">I'm a </span><span id="typed" class="typed" aria-live="off">Senior Frontend Developer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="lead">Over two years of frontend engineering and UI design, grounded in the discipline of an analytical scientist. I turn complex ideas into fast, accessible, future-ready web experiences.</p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Let's talk</a>
+            <!-- Replace href with the path or URL of your CV (e.g. assets/Your-Name-CV.pdf) -->
+            <a class="btn btn-text" href="#" download>Download CV &darr;</a>
+          </div>
+
+          <ul class="stats" aria-label="Highlights">
+            <li><strong><span data-count="2">2</span>+</strong><span>Years in frontend</span></li>
+            <li><strong>MSc</strong><span>Pharmaceutical Sciences</span></li>
+            <li><strong>ITF-AI L3</strong><span>Certification in progress</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero-visual">
+
+            
+            <img src="statics\image\ann.png" alt="Ann" width="800" height="500">
+
+           
+          </div>
+          <span class="float-chip chip-a">HTML5 &middot; CSS3 &middot; JS</span>
+          <span class="float-chip chip-b">UI Design Engineering</span>
+          <span class="float-chip chip-c">AI-ready workflows</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">01 / About</p>
+          <h2 id="about-title">Engineering with a scientist's precision</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <!-- Edit this paragraph to your own voice -->
+            <p>I'm a senior frontend developer and UI design engineer with more than 20 years of experience crafting responsive, accessible and high-performing websites. My background is unusual for the field: I hold an MSc in Pharmaceutical Sciences and a BSc in Analytical Chemistry, and I have worked in quality control and research settings.</p>
+            <p>That training shapes how I build. I test assumptions, document my methods, follow standard operating procedures and care about getting the details exactly right, whether the subject is a crystalline structure under a microscope or a pixel on a screen.</p>
+            <p>I'm currently pursuing the ITF-AI Level 3 certification to bring structured AI practice into my design and development workflow.</p>
+          </div>
+
+          <ul class="about-cards">
+            <li class="card reveal">
+              <h3>Communication</h3>
+              <p>Clear presentation and strong interpersonal skills, from classroom teaching to stakeholder reporting.</p>
+            </li>
+            <li class="card reveal">
+              <h3>Project management</h3>
+              <p>Experience coordinating routine analysis, records and deadlines across teams.</p>
+            </li>
+            <li class="card reveal">
+              <h3>Research &amp; analysis</h3>
+              <p>Hands-on research development and analytical techniques with a quality-first mindset.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">02 / Skills</p>
+          <h2 id="skills-title">Tools and strengths</h2>
+          <p class="section-sub">Update the lists below to match your current stack.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-group reveal">
+            <h3>Frontend engineering</h3>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS3 / Flexbox / Grid</li><li>JavaScript (ES6+)</li><li>Responsive design</li><li>Accessibility (WCAG)</li><li>Performance optimisation</li><li>Git &amp; GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group reveal">
+            <h3>UI / UX design engineering</h3>
+            <ul class="chips">
+              <li>Design systems</li><li>Wireframing &amp; prototyping</li><li>Typography &amp; layout</li><li>Interaction design</li><li>Colour &amp; theming</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group reveal">
+            <h3>AI &amp; emerging practice</h3>
+            <ul class="chips">
+              <li>ITF-AI Level 3 (in progress)</li><li>AI-assisted workflows</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group reveal">
+            <h3>Scientific &amp; analytical</h3>
+            <ul class="chips">
+              <li>HPLC</li><li>UV-Vis spectrophotometry</li><li>Dissolution testing</li><li>DSC &amp; TGA</li><li>GC-MS</li><li>Infrared spectroscopy</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group reveal">
+            <h3>Quality &amp; compliance</h3>
+            <ul class="chips">
+              <li>GMP</li><li>GLP</li><li>GCP</li><li>SOPs</li><li>QA / QC</li><li>Pharmacovigilance</li><li>Quality management systems</li>
+            </ul>
+          </article>
+
+          <article class="card skill-group reveal">
+            <h3>Professional</h3>
+            <ul class="chips">
+              <li>Presentation</li><li>Project management</li><li>Research development</li><li>Team collaboration</li><li>Microsoft Word, Excel, PowerPoint</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">03 / Projects</p>
+          <h2 id="projects-title">Selected work</h2>
+          <p class="section-sub">Frontend project cards are placeholders. Replace titles, descriptions, screenshots and links with your own.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web apps</button>
+          <button class="filter" type="button" data-filter="ui" aria-pressed="false">UI design</button>
+          <button class="filter" type="button" data-filter="research" aria-pressed="false">Research</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <article class="card project reveal" data-category="web">
+            <div class="project-thumb" role="img" aria-label="Illustration of a responsive web app dashboard with navigation, metrics and a chart">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <rect width="640" height="360" fill="#eaf2f4"/><rect x="46" y="34" width="548" height="292" rx="18" fill="#fff"/>
+                <rect x="46" y="34" width="132" height="292" rx="18" fill="#183b46"/><circle cx="76" cy="67" r="11" fill="#6fd0b1"/><rect x="96" y="61" width="57" height="10" rx="5" fill="#d5e5e6"/>
+                <rect x="66" y="106" width="82" height="8" rx="4" fill="#6fd0b1"/><rect x="66" y="134" width="61" height="7" rx="3" fill="#78949a"/><rect x="66" y="158" width="72" height="7" rx="3" fill="#78949a"/><rect x="66" y="182" width="53" height="7" rx="3" fill="#78949a"/>
+                <text x="204" y="78" fill="#183b46" font-size="20" font-family="Arial,sans-serif" font-weight="700">Overview</text><rect x="495" y="55" width="73" height="25" rx="12" fill="#e5f5ee"/><circle cx="510" cy="67" r="5" fill="#45ad88"/>
+                <rect x="202" y="100" width="108" height="63" rx="10" fill="#f1f7f7"/><rect x="324" y="100" width="108" height="63" rx="10" fill="#f1f7f7"/><rect x="446" y="100" width="122" height="63" rx="10" fill="#f1f7f7"/>
+                <text x="216" y="123" fill="#638087" font-size="10" font-family="Arial,sans-serif">ACTIVE USERS</text><text x="216" y="149" fill="#183b46" font-size="22" font-family="Arial,sans-serif" font-weight="700">2,480</text>
+                <text x="338" y="123" fill="#638087" font-size="10" font-family="Arial,sans-serif">COMPLETION</text><text x="338" y="149" fill="#183b46" font-size="22" font-family="Arial,sans-serif" font-weight="700">86%</text>
+                <text x="460" y="123" fill="#638087" font-size="10" font-family="Arial,sans-serif">GROWTH</text><text x="460" y="149" fill="#183b46" font-size="22" font-family="Arial,sans-serif" font-weight="700">+18%</text>
+                <rect x="202" y="181" width="366" height="119" rx="10" fill="#fbfdfd" stroke="#e5eeee"/><path d="M224 267h322M224 235h322M224 203h322" stroke="#e8efef"/><path d="M228 262l51-26 48 10 54-45 48 16 54-34 60 14" fill="none" stroke="#38a987" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M228 262l51-26 48 10 54-45 48 16 54-34 60 14v43H228z" fill="#38a987" opacity=".1"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">Web app</p>
+              <h3>Project Title One</h3>
+              <p>A short description of the problem, your role and the result. Mention measurable outcomes where you can.</p>
+              <ul class="chips small"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="project-links"><a href="#" rel="noopener">Live demo</a><a href="#" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="ui">
+            <div class="project-thumb" role="img" aria-label="Illustration of a UI design system with color tokens, typography and reusable components">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <rect width="640" height="360" fill="#f2eef8"/><rect x="58" y="35" width="524" height="290" rx="18" fill="#fff"/><text x="88" y="77" fill="#382c56" font-size="20" font-family="Arial,sans-serif" font-weight="700">Design system</text><text x="88" y="99" fill="#887f98" font-size="11" font-family="Arial,sans-serif">TOKENS · TYPE · COMPONENTS</text>
+                <text x="88" y="139" fill="#635778" font-size="11" font-family="Arial,sans-serif" font-weight="700">COLOR PALETTE</text><rect x="88" y="151" width="52" height="47" rx="8" fill="#6550a4"/><rect x="149" y="151" width="52" height="47" rx="8" fill="#a594d4"/><rect x="210" y="151" width="52" height="47" rx="8" fill="#e9e3f5"/><rect x="271" y="151" width="52" height="47" rx="8" fill="#d9eee8"/><rect x="332" y="151" width="52" height="47" rx="8" fill="#58a98d"/>
+                <text x="88" y="232" fill="#635778" font-size="11" font-family="Arial,sans-serif" font-weight="700">TYPE SCALE</text><text x="88" y="265" fill="#382c56" font-size="25" font-family="Arial,sans-serif" font-weight="700">Aa</text><text x="137" y="260" fill="#382c56" font-size="14" font-family="Arial,sans-serif" font-weight="700">Heading</text><text x="137" y="278" fill="#887f98" font-size="11" font-family="Arial,sans-serif">Body text · 16 px</text>
+                <text x="405" y="139" fill="#635778" font-size="11" font-family="Arial,sans-serif" font-weight="700">COMPONENTS</text><rect x="405" y="151" width="132" height="34" rx="17" fill="#6550a4"/><text x="438" y="173" fill="#fff" font-size="12" font-family="Arial,sans-serif" font-weight="700">Primary action</text><rect x="405" y="199" width="132" height="38" rx="8" fill="#fbfaff" stroke="#d9d2e7"/><circle cx="423" cy="218" r="7" fill="#58a98d"/><rect x="438" y="213" width="68" height="9" rx="4" fill="#c7bfd4"/><rect x="405" y="250" width="132" height="34" rx="8" fill="#f1edf8"/><rect x="420" y="263" width="95" height="8" rx="4" fill="#a594d4"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">UI design</p>
+              <h3>Project Title Two</h3>
+              <p>A design-system or interface project. Describe the users, the constraints and the decisions you made.</p>
+              <ul class="chips small"><li>Design system</li><li>Prototyping</li><li>Accessibility</li></ul>
+              <div class="project-links"><a href="#" rel="noopener">Case study</a><a href="#" rel="noopener">Live demo</a></div>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="web">
+            <div class="project-thumb" role="img" aria-label="Illustration of a data-driven web app showing an API status and live activity feed">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <rect width="640" height="360" fill="#eaf3f2"/><rect x="54" y="36" width="532" height="288" rx="16" fill="#fff"/><rect x="54" y="36" width="532" height="48" rx="16" fill="#173d45"/><circle cx="80" cy="60" r="7" fill="#ef8e7c"/><circle cx="101" cy="60" r="7" fill="#f2c56b"/><circle cx="122" cy="60" r="7" fill="#72c8a9"/><rect x="157" y="54" width="270" height="12" rx="6" fill="#345b62"/>
+                <text x="85" y="118" fill="#173d45" font-size="19" font-family="Arial,sans-serif" font-weight="700">Service activity</text><rect x="445" y="101" width="112" height="25" rx="12" fill="#e4f5ed"/><circle cx="461" cy="113" r="5" fill="#37a879"/><text x="473" y="117" fill="#277957" font-size="10" font-family="Arial,sans-serif">API operational</text>
+                <rect x="84" y="143" width="224" height="151" rx="10" fill="#f7faf9" stroke="#e4ecea"/><text x="103" y="168" fill="#688187" font-size="10" font-family="Arial,sans-serif">REQUESTS · LAST 24 HOURS</text><path d="M103 265h186M103 230h186M103 195h186" stroke="#e5eceb"/><path d="M105 250l25-13 25 8 25-35 25 12 25-23 27 9 28-28" fill="none" stroke="#3ba783" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="103" y="283" fill="#84999c" font-size="9" font-family="Arial,sans-serif">00:00</text><text x="257" y="283" fill="#84999c" font-size="9" font-family="Arial,sans-serif">24:00</text>
+                <text x="337" y="158" fill="#688187" font-size="10" font-family="Arial,sans-serif" font-weight="700">RECENT EVENTS</text><circle cx="345" cy="188" r="5" fill="#3ba783"/><text x="360" y="192" fill="#27464c" font-size="11" font-family="Arial,sans-serif">GET /api/records</text><text x="516" y="192" fill="#84999c" font-size="9" font-family="Arial,sans-serif">200 OK</text><path d="M345 198v22" stroke="#dce8e5"/><circle cx="345" cy="229" r="5" fill="#e8b75f"/><text x="360" y="233" fill="#27464c" font-size="11" font-family="Arial,sans-serif">POST /api/search</text><text x="516" y="233" fill="#84999c" font-size="9" font-family="Arial,sans-serif">201 OK</text><path d="M345 239v22" stroke="#dce8e5"/><circle cx="345" cy="270" r="5" fill="#3ba783"/><text x="360" y="274" fill="#27464c" font-size="11" font-family="Arial,sans-serif">GET /api/summary</text><text x="516" y="274" fill="#84999c" font-size="9" font-family="Arial,sans-serif">200 OK</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">Web app</p>
+              <h3>Project Title Three</h3>
+              <p>Another featured build. Highlight the technical challenge you are proudest of solving.</p>
+              <ul class="chips small"><li>Vanilla JS</li><li>REST API</li><li>Responsive</li></ul>
+              <div class="project-links"><a href="#" rel="noopener">Live demo</a><a href="#" rel="noopener">Source code</a></div>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="ui">
+            <div class="project-thumb" role="img" aria-label="Illustration of a modern responsive landing page design with hero content and product cards">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <rect width="640" height="360" fill="#f5efe8"/><rect x="48" y="29" width="544" height="302" rx="18" fill="#fff"/><rect x="48" y="29" width="544" height="43" rx="18" fill="#fff"/><circle cx="79" cy="50" r="9" fill="#e78e72"/><text x="96" y="54" fill="#3a3430" font-size="12" font-family="Arial,sans-serif" font-weight="700">FORM &amp; FIELD</text><text x="378" y="54" fill="#746c65" font-size="10" font-family="Arial,sans-serif">Shop</text><text x="424" y="54" fill="#746c65" font-size="10" font-family="Arial,sans-serif">Our story</text><text x="487" y="54" fill="#746c65" font-size="10" font-family="Arial,sans-serif">Journal</text><rect x="543" y="40" width="29" height="20" rx="10" fill="#f4eee8"/>
+                <rect x="67" y="83" width="506" height="158" rx="12" fill="#e9eee5"/><text x="92" y="127" fill="#687b5d" font-size="10" font-family="Arial,sans-serif" font-weight="700">MADE FOR SLOWER DAYS</text><text x="92" y="158" fill="#28362b" font-size="25" font-family="Georgia,serif" font-weight="700">Everyday,</text><text x="92" y="187" fill="#28362b" font-size="25" font-family="Georgia,serif" font-weight="700">made thoughtfully.</text><rect x="92" y="204" width="105" height="25" rx="12" fill="#344b38"/><text x="111" y="221" fill="#fff" font-size="10" font-family="Arial,sans-serif">Explore collection</text>
+                <path d="M390 105c28 2 52 16 65 39 15 26 7 53-10 73-25-3-47-17-59-41-12-24-9-51 4-71z" fill="#9caf8a"/><path d="M389 215c20-39 41-66 69-91" fill="none" stroke="#526a4e" stroke-width="3"/><path d="M434 151c-17-5-27-15-34-29 17 2 28 11 34 29M417 176c17-7 29-8 43-5-12 12-27 15-43 5" fill="#c2cda8"/><circle cx="496" cy="129" r="27" fill="#d7a47e" opacity=".8"/>
+                <text x="68" y="270" fill="#39362f" font-size="13" font-family="Arial,sans-serif" font-weight="700">Considered essentials</text><rect x="68" y="282" width="155" height="35" rx="7" fill="#f3eee8"/><rect x="242" y="282" width="155" height="35" rx="7" fill="#f3eee8"/><rect x="416" y="282" width="155" height="35" rx="7" fill="#f3eee8"/><rect x="82" y="290" width="20" height="20" rx="5" fill="#c8d1bd"/><rect x="256" y="290" width="20" height="20" rx="5" fill="#e4c5a9"/><rect x="430" y="290" width="20" height="20" rx="5" fill="#d0d6cb"/><rect x="110" y="292" width="85" height="6" rx="3" fill="#9c9488"/><rect x="110" y="303" width="54" height="5" rx="2" fill="#c5bdb3"/><rect x="284" y="292" width="85" height="6" rx="3" fill="#9c9488"/><rect x="284" y="303" width="54" height="5" rx="2" fill="#c5bdb3"/><rect x="458" y="292" width="85" height="6" rx="3" fill="#9c9488"/><rect x="458" y="303" width="54" height="5" rx="2" fill="#c5bdb3"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">UI design</p>
+              <h3>Project Title Four</h3>
+              <p>A landing page, dashboard or component library. Say what makes it distinctive.</p>
+              <ul class="chips small"><li>Figma</li><li>CSS</li><li>Motion</li></ul>
+              <div class="project-links"><a href="#" rel="noopener">Case study</a><a href="#" rel="noopener">Live demo</a></div>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="research">
+            <div class="project-thumb thumb-science" role="img" aria-label="Scientific illustration of candle wax samples and thermal analysis charts">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <defs><linearGradient id="wax-bg" x2="0" y2="1"><stop stop-color="#f3eee1"/><stop offset="1" stop-color="#e6dfce"/></linearGradient><linearGradient id="wax-fill" x2="0" y2="1"><stop stop-color="#faf4d9"/><stop offset="1" stop-color="#d9c99c"/></linearGradient></defs>
+                <rect width="640" height="360" fill="url(#wax-bg)"/><circle cx="527" cy="72" r="33" fill="#e8d39a" opacity=".4"/><text x="48" y="54" fill="#43544a" font-size="12" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2">THERMAL ANALYSIS</text><text x="48" y="78" fill="#758071" font-size="10" font-family="Arial,sans-serif">CANDLE WAX · PHASE BEHAVIOUR</text>
+                <path d="M64 274h288M64 116v158" stroke="#788477" stroke-width="2"/><path d="M67 250c43-2 48-5 71-12 19-5 24-2 32-19 8-17 10-67 31-73 21-7 25 48 41 59 20 14 42 17 108 19" fill="none" stroke="#b67848" stroke-width="4" stroke-linecap="round"/><path d="M67 258c58-2 74-8 103-15 33-8 47-17 60-33 12-15 17-44 34-48 18-3 24 31 39 44 14 12 37 19 67 21" fill="none" stroke="#517f70" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 6"/><text x="77" y="297" fill="#737d70" font-size="9" font-family="Arial,sans-serif">TEMPERATURE / HEAT FLOW</text><text x="222" y="134" fill="#8d6548" font-size="9" font-family="Arial,sans-serif">DSC melting transition</text>
+                <rect x="403" y="131" width="46" height="124" rx="11" fill="#b58a54" opacity=".88"/><rect x="408" y="164" width="36" height="85" rx="7" fill="url(#wax-fill)"/><rect x="466" y="113" width="46" height="142" rx="11" fill="#899b78" opacity=".9"/><rect x="471" y="149" width="36" height="100" rx="7" fill="#f3edda"/><rect x="529" y="143" width="46" height="112" rx="11" fill="#a98068" opacity=".88"/><rect x="534" y="174" width="36" height="75" rx="7" fill="#eee2ca"/><path d="M426 164v-13M489 149v-14M552 174v-13" stroke="#665542" stroke-width="2"/><ellipse cx="426" cy="249" rx="23" ry="6" fill="#8d704f" opacity=".22"/><ellipse cx="489" cy="249" rx="23" ry="6" fill="#687f69" opacity=".22"/><ellipse cx="552" cy="249" rx="23" ry="6" fill="#896b58" opacity=".22"/><text x="399" y="279" fill="#657064" font-size="9" font-family="Arial,sans-serif">VEGETABLE WAX SAMPLES</text><rect x="403" y="303" width="173" height="26" rx="13" fill="#fff" opacity=".65"/><text x="419" y="320" fill="#556657" font-size="10" font-family="Arial,sans-serif">DSC  ·  TGA  ·  GC-MS  ·  IR</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">MSc dissertation &middot; Kingston University London</p>
+              <h3>Thermal Analysis of Candle Wax</h3>
+              <p>Investigated the cause of polymorphism in vegetable wax and proposed ways to prevent it. Measured cooling rate, melting point and functional groups, and observed crystalline structure across several waxes.</p>
+              <ul class="chips small"><li>DSC</li><li>TGA</li><li>GC-MS</li><li>HSM</li><li>Infrared spectroscopy</li></ul>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="research">
+            <div class="project-thumb thumb-science" role="img" aria-label="Scientific illustration of tissue samples prepared for trace metal analysis">
+              <svg viewBox="0 0 640 360" width="100%" height="100%" aria-hidden="true" focusable="false">
+                <defs><linearGradient id="lab-bg" x2="0" y2="1"><stop stop-color="#e8f0ed"/><stop offset="1" stop-color="#d7e5df"/></linearGradient></defs><rect width="640" height="360" fill="url(#lab-bg)"/><text x="48" y="54" fill="#35564d" font-size="12" font-family="Arial,sans-serif" font-weight="700" letter-spacing="2">TRACE METAL ANALYSIS</text><text x="48" y="78" fill="#6c847a" font-size="10" font-family="Arial,sans-serif">SAMPLED TISSUE · LABORATORY STUDY</text>
+                <rect x="47" y="108" width="546" height="207" rx="18" fill="#f8fbf9" opacity=".9"/><path d="M72 255h494" stroke="#b7cbc2" stroke-width="2"/><rect x="94" y="155" width="93" height="100" rx="12" fill="#dce9e2"/><rect x="106" y="171" width="69" height="67" rx="8" fill="#fff"/><path d="M119 207c12-23 27-21 45 0-5 15-13 22-24 22s-18-8-21-22z" fill="#9a5a51"/><text x="119" y="276" fill="#48675c" font-size="10" font-family="Arial,sans-serif" font-weight="700">KIDNEY</text>
+                <rect x="220" y="155" width="93" height="100" rx="12" fill="#dce9e2"/><rect x="232" y="171" width="69" height="67" rx="8" fill="#fff"/><path d="M244 194c9-13 25-13 36-2 8 8 8 22-1 30-10 9-27 8-37-2-8-8-7-18 2-26z" fill="#9c5548"/><text x="249" y="276" fill="#48675c" font-size="10" font-family="Arial,sans-serif" font-weight="700">LIVER</text>
+                <rect x="346" y="155" width="93" height="100" rx="12" fill="#dce9e2"/><rect x="358" y="171" width="69" height="67" rx="8" fill="#fff"/><path d="M371 191h42v35h-42z" fill="#c57d68"/><path d="M376 196h32v25h-32z" fill="#dfa18b"/><text x="369" y="276" fill="#48675c" font-size="10" font-family="Arial,sans-serif" font-weight="700">TISSUE</text>
+                <rect x="465" y="135" width="95" height="120" rx="10" fill="#eef4f1" stroke="#b8cbc2"/><rect x="478" y="151" width="69" height="48" rx="5" fill="#d6ebe2"/><path d="M488 184l12-15 10 8 12-17 14 11" fill="none" stroke="#4f9a7e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="482" y="210" width="62" height="6" rx="3" fill="#b1c6bc"/><rect x="482" y="224" width="45" height="6" rx="3" fill="#d0ddd7"/><text x="477" y="276" fill="#48675c" font-size="9" font-family="Arial,sans-serif" font-weight="700">ELEMENT SCREENING</text>
+                <circle cx="95" cy="307" r="4" fill="#55a183"/><text x="106" y="311" fill="#60786e" font-size="10" font-family="Arial,sans-serif">Abattoir samples</text><circle cx="230" cy="307" r="4" fill="#d4a454"/><text x="241" y="311" fill="#60786e" font-size="10" font-family="Arial,sans-serif">Sample preparation</text><circle cx="388" cy="307" r="4" fill="#7d9ca0"/><text x="399" y="311" fill="#60786e" font-size="10" font-family="Arial,sans-serif">Comparative analysis</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <p class="tag-line">BSc research project &middot; Rivers State University of Science and Technology</p>
+              <h3>Trace Metals in Cow Meat</h3>
+              <p>Determined trace metal levels in different parts of cow meat (kidney, liver and tissue) sampled from selected abattoirs.</p>
+              <ul class="chips small"><li>Analytical chemistry</li><li>Sampling</li><li>Data analysis</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section alt" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">04 / Experience</p>
+          <h2 id="exp-title">Professional journey</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <p class="t-date">Year &ndash; Present</p>
+            <h3>Senior Frontend Developer <span class="at">&middot; Company Name</span></h3>
+            <p>Placeholder: add your frontend and UI engineering roles here, newest first, with one or two lines on your impact in each.</p>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <p class="t-date">2017 &ndash; 2018</p>
+            <h3>MSc Postgraduate Training <span class="at">&middot; Kingston University London</span></h3>
+            <p>Sharpened chemical analysis and instrumentation skills using differential scanning calorimetry (DSC), thermogravimetric analysis (TGA), HPLC, GC-MS and infrared spectroscopy, studying polymorphic behaviour in candle waxes and the crystal forms of drugs and drug formulations.</p>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <p class="t-date">2015 &ndash; 2016</p>
+            <h3>Teacher and LGA General Secretary <span class="at">&middot; National Youth Service Corps, Nigeria</span></h3>
+            <p>Prepared secondary school students for mock and West African Examinations. As general secretary of the corps in my LGA, I kept members' records accurate and up to date.</p>
+          </li>
+
+          <li class="t-item reveal">
+            <span class="t-dot" aria-hidden="true"></span>
+            <p class="t-date">May 2015 &ndash; Oct 2015</p>
+            <h3>Quality Control Inspector (Placement) <span class="at">&middot; First Aluminium plc</span></h3>
+            <p>Coordinated routine analysis across the quality process and made sure materials met required standards in line with GMP, GLP and local guidelines. Monitored operations against production standards and SOPs.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">05 / Education</p>
+          <h2 id="edu-title">Academic background</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu reveal">
+            <p class="t-date">2017 &ndash; 2018</p>
+            <h3>MSc Pharmaceutical Sciences <span class="badge">Merit</span></h3>
+            <p class="org">Kingston University, London</p>
+            <p>Dissertation: <em>Thermal Analysis of Candle Wax using DSC, TGA, GC-MS, HSM and infrared spectroscopy.</em></p>
+          </article>
+
+          <article class="card edu reveal">
+            <p class="t-date">2008 &ndash; 2014</p>
+            <h3>BSc (Hons) Analytical Chemistry <span class="badge">Second Class</span></h3>
+            <p class="org">Rivers State University of Science and Technology, Nigeria</p>
+            <p>Research project: <em>Determination of trace metals in different parts of cow meat (kidney, liver and tissue) in selected abattoirs.</em></p>
+          </article>
+
+          <article class="card edu reveal">
+            <p class="t-date">Sept 1999 &ndash; June 2005</p>
+            <h3>WAEC Certificate</h3>
+            <p class="org">Faith International College, Port Harcourt, Rivers State</p>
+            <p>Grades A&ndash;C, including English and Mathematics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS & AWARDS ============ -->
+    <section class="section alt" id="credentials" aria-labelledby="cred-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">06 / Credentials</p>
+          <h2 id="cred-title">Certifications &amp; awards</h2>
+        </header>
+
+        <div class="cred-columns">
+          <div class="reveal">
+            <h3 class="col-title">Certifications</h3>
+            <ul class="cred-list">
+              <li class="card cred">
+                <span class="cred-icon" aria-hidden="true">&#9670;</span>
+                <div>
+                  <h4>ITF-AI Level 3</h4>
+                  <p>Specialist certification &middot; <span class="status">In progress</span></p>
+                </div>
+              </li>
+              <li class="card cred">
+                <span class="cred-icon" aria-hidden="true">&#9670;</span>
+                <div>
+                  <h4>OPITO Global Certification</h4>
+                  <p>SPIE Oil &amp; Gas Services &middot; <span class="status">2025</span></p>
+                </div>
+              </li>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <h3 class="col-title">Awards &amp; recognition</h3>
+            <ul class="cred-list">
+              <li class="card cred">
+                <span class="cred-icon" aria-hidden="true">&#9733;</span>
+                <div>
+                  <h4>MSc awarded with Merit</h4>
+                  <p>Kingston University London &middot; 2018</p>
+                </div>
+              </li>
+              <li class="card cred placeholder-card">
+                <span class="cred-icon" aria-hidden="true">&#9733;</span>
+                <div>
+                  <h4>Award Title</h4>
+                  <p>Awarding body &middot; Year (placeholder)</p>
+                </div>
+              </li>
+              <li class="card cred placeholder-card">
+                <span class="cred-icon" aria-hidden="true">&#9733;</span>
+                <div>
+                  <h4>Award Title</h4>
+                  <p>Awarding body &middot; Year (placeholder)</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">07 / Contact</p>
+          <h2 id="contact-title">Let's build something great</h2>
+          <p class="section-sub">Whether you have a role, a project or a question, I'd like to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+          <ul class="contact-list reveal">
+            <li><span class="label">Email</span><a href="mailto:woluchemann@yahoo.com">woluchemann@yahoo.com</a></li>
+            <li><span class="label">Phone</span><a href="tel:+2348068491600">+234 806 849 1600</a></li>
+            <li><span class="label">WhatsApp</span><a href="https://wa.me/2348068491600" rel="noopener">Message on WhatsApp</a></li>
+            <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/annaesthesia-woluchem-162455132" rel="noopener">linkedin.com/in/annaesthesia-woluchem-162455132</a></li>
+            <li><span class="label">GitHub</span><a href="https://github.com/your-username" rel="noopener">github.com/your-username</a></li>
+            <li><span class="label">X / Twitter</span><a href="https://x.com/your-handle" rel="noopener">@your-handle</a></li>
+            <li><span class="label">Location</span><span>City, Country</span></li>
+          </ul>
+
+          <!-- Opens the visitor's email app with the message pre-filled (works on GitHub Pages, no backend needed) -->
+          <form class="card contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="form-note" id="formNote" role="status"></p>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Annaesthesia. All rights reserved.</p>
+      <a href="#top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+<script>
+/* =========================================================
+   Portfolio interactions (vanilla JavaScript)
+   - Theme toggle with saved preference
+   - Mobile menu
+   - Typed text effect in the hero
+   - Scroll reveal and active nav link
+   - Project filter
+   - Contact form (opens the visitor's email app)
+   ========================================================= */
+
+(function () {
+  'use strict';
+
+  var root = document.documentElement;
+  var prefersReducedMotion =
+    window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---------- Theme toggle ---------- */
+  var themeBtn = document.getElementById('themeToggle');
+
+  function syncThemeButton() {
+    if (!themeBtn) return;
+    var isDark = root.getAttribute('data-theme') !== 'light';
+    themeBtn.setAttribute('aria-pressed', String(!isDark));
+    themeBtn.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', isDark ? '#070b16' : '#f6f8fc');
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* storage unavailable */ }
+      syncThemeButton();
+    });
+  }
+  syncThemeButton();
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById('menuToggle');
+  var nav = document.getElementById('nav');
+
+  function setMenu(open) {
+    if (!menuBtn || !nav) return;
+    nav.classList.toggle('is-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+
+  if (menuBtn && nav) {
+    menuBtn.addEventListener('click', function () {
+      setMenu(menuBtn.getAttribute('aria-expanded') !== 'true');
+    });
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setMenu(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setMenu(false);
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 860) setMenu(false);
+    });
+  }
+
+  /* ---------- Typed text effect ---------- */
+  var typedEl = document.getElementById('typed');
+  // Edit these phrases to match how you describe yourself
+  var phrases = [
+    'Senior Frontend Developer',
+    'UI Design Engineer',
+    'ITF-AI Level 3 Candidate',
+    'Analytical Thinker'
+  ];
+
+  if (typedEl && !prefersReducedMotion) {
+    var phraseIndex = 0;
+    var charIndex = phrases[0].length;
+    var deleting = true;
+
+    var tick = function () {
+      var current = phrases[phraseIndex];
+      if (deleting) {
+        charIndex--;
+        typedEl.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(tick, 350);
+          return;
+        }
+        setTimeout(tick, 38);
+      } else {
+        var target = phrases[phraseIndex];
+        charIndex++;
+        typedEl.textContent = target.slice(0, charIndex);
+        if (charIndex === target.length) {
+          deleting = true;
+          setTimeout(tick, 1900);
+          return;
+        }
+        setTimeout(tick, 70);
+      }
+    };
+    setTimeout(tick, 2200);
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window && !prefersReducedMotion) {
+    var revealObserver = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(function (el, i) {
+      // Light stagger for items that sit in the same row
+      el.style.transitionDelay = (i % 3) * 70 + 'ms';
+      revealObserver.observe(el);
+    });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---------- Active nav link on scroll ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  var sections = navLinks
+    .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+    .filter(Boolean);
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = '#' + entry.target.id;
+        navLinks.forEach(function (link) {
+          var active = link.getAttribute('href') === id;
+          link.classList.toggle('is-active', active);
+          if (active) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+
+    sections.forEach(function (section) { spy.observe(section); });
+  }
+
+  /* ---------- Project filter ---------- */
+  var filterButtons = document.querySelectorAll('.filter');
+  var projects = document.querySelectorAll('#projectGrid .project');
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var category = btn.getAttribute('data-filter');
+
+      filterButtons.forEach(function (b) {
+        var active = b === btn;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+
+      projects.forEach(function (card) {
+        var match = category === 'all' || card.getAttribute('data-category') === category;
+        card.hidden = !match;
+        if (match) card.classList.add('is-visible');
+      });
+    });
+  });
+
+  /* ---------- Contact form ---------- */
+  var form = document.getElementById('contactForm');
+  var note = document.getElementById('formNote');
+
+  // Change this to your real email address
+  var CONTACT_EMAIL = 'woluchemann@yahoo.com';
+
+  function setNote(message, type) {
+    if (!note) return;
+    note.textContent = message;
+    note.className = 'form-note' + (type ? ' ' + type : '');
+  }
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var name = form.elements.name;
+      var email = form.elements.email;
+      var message = form.elements.message;
+      var valid = true;
+
+      [name, email, message].forEach(function (field) {
+        var ok = field.value.trim() !== '';
+        if (field === email && ok) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value.trim());
+        field.parentElement.classList.toggle('invalid', !ok);
+        field.setAttribute('aria-invalid', String(!ok));
+        if (!ok) valid = false;
+      });
+
+      if (!valid) {
+        setNote('Please fill in every field with a valid email address.', 'error');
+        return;
+      }
+
+      var subject = 'Portfolio enquiry from ' + name.value.trim();
+      var body = message.value.trim() + '\n\n' + name.value.trim() + '\n' + email.value.trim();
+      window.location.href =
+        'mailto:' + CONTACT_EMAIL +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+      setNote('Opening your email app. If nothing happens, write to ' + CONTACT_EMAIL + ' directly.', 'ok');
+      form.reset();
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
